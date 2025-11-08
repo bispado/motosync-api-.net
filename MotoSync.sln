@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMotoSync", "ApiMotoSync\ApiMotoSync.csproj", "{39391056-E550-40C4-8512-51440DCD8776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoSync.Tests", "MotoSync.Tests\MotoSync.Tests.csproj", "{A0B9EC84-BFBD-4DA4-8F3D-B77F4F39BCE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39391056-E550-40C4-8512-51440DCD8776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39391056-E550-40C4-8512-51440DCD8776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39391056-E550-40C4-8512-51440DCD8776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39391056-E550-40C4-8512-51440DCD8776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B9EC84-BFBD-4DA4-8F3D-B77F4F39BCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B9EC84-BFBD-4DA4-8F3D-B77F4F39BCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B9EC84-BFBD-4DA4-8F3D-B77F4F39BCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B9EC84-BFBD-4DA4-8F3D-B77F4F39BCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
