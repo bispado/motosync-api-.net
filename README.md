@@ -17,6 +17,11 @@ API .NET 8 minimalista para gestão de motos, usuários e filiais com integraç�
   - `infra-app.sh` – script usado pela tarefa Azure CLI para validar variáveis Oracle.
 - `MotoSync.Tests/` – testes com `Microsoft.EntityFrameworkCore.InMemory`.
 
+## Status da Pipeline
+
+- Build: ![CI](https://dev.azure.com/motosync/MotoSync%20Devops/_apis/build/status/MotoSync%20Devops-ASP.NET%20Core-CI)
+- Release: configurada via Azure DevOps Classic com deploy automático para Azure Web App.
+
 ## Variáveis de ambiente
 
 Configure as variáveis na pipeline conforme tabela abaixo (marque `Settable at queue time`):
