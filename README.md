@@ -20,7 +20,7 @@ API .NET 8 minimalista para gestão de motos, usuários e filiais com integraç�
 ## Status da Pipeline
 
 - Build: ![CI](https://dev.azure.com/motosync/MotoSync%20Devops/_apis/build/status/MotoSync%20Devops-ASP.NET%20Core-CI)
-- Release: configurada via Azure DevOps Classic com deploy automático para Azure Web App.
+- Release: Pipeline clássica `Deploy em Dev` publica em `api-motosync.azurewebsites.net`.
 
 ## Variáveis de ambiente
 
@@ -36,6 +36,9 @@ Configure as variáveis na pipeline conforme tabela abaixo (marque `Settable at 
 | `ORACLE_USER` | `rm558515` | Usuário Oracle |
 | `ORACLE_PASS` | `Fiap#2025` | Senha Oracle |
 | `LOCATION` | `brazilsouth` | Região Azure |
+| `NOME_WEBAPP` | `api-motosync` | Nome do Web App criado pela automação |
+| `RESOURCE_GROUP` | `rg-motosync` | Grupo de recursos padrão |
+| `APP_PLAN` | `plan-motosync` | Plano de App Service utilizado |
 
 > A string final é aplicada em `appsettings.json` via `ConnectionStrings:OracleConnection`. Em produção, use Azure App Service Application Settings para sobrepor valores sensíveis.
 
@@ -71,7 +74,8 @@ Após qualquer commit (ex.: inclusão da rota `/wellcome`), a pipeline de build 
 
 ## Scripts úteis
 
-- `ApiMotoSync/infra-app.sh`: valida parâmetros Oracle e tenta `sqlplus -V`/`tnsping` quando disponíveis.
+- `ApiMotoSync/infra-app.sh`: provisiona tabelas Oracle e cria/atualiza recursos Azure (Resource Group, App Service Plan e Web App), além de habilitar logging.
+- Domínio padrão após o deploy: `https://api-motosync.azurewebsites.net/`
 
 ## Limpeza
 
