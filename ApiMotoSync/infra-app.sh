@@ -80,6 +80,8 @@ BEGIN
     CREATE TABLE "USUARIOS" (
       "Id" RAW(16) NOT NULL,
       "Nome" NVARCHAR2(150) NOT NULL,
+      "Email" NVARCHAR2(180) NOT NULL,
+      "Cargo" NVARCHAR2(80) NOT NULL,
       "FilialId" RAW(16) NOT NULL,
       CONSTRAINT "PK_USUARIOS" PRIMARY KEY ("Id")
     )
@@ -96,7 +98,7 @@ BEGIN
       "Modelo" NVARCHAR2(150) NOT NULL,
       "Placa" NVARCHAR2(10) NOT NULL,
       "Ano" NUMBER(10) NOT NULL,
-      "Status" NVARCHAR2(50) DEFAULT 'Disponivel' NOT NULL,
+      "Status" NVARCHAR2(50) DEFAULT 'Disponível' NOT NULL,
       "FilialId" RAW(16) NOT NULL,
       "GestorId" RAW(16),
       CONSTRAINT "PK_MOTOS" PRIMARY KEY ("Id")
