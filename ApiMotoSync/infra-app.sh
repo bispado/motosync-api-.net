@@ -190,7 +190,7 @@ LOCATION="${LOCATION:-brazilsouth}"
 PLAN_NAME="${APP_PLAN:-plan-motosync}"
 APP_NAME="${NOME_WEBAPP:-api-motosync}"
 SKU="${APP_SERVICE_SKU:-B1}"
-RUNTIME="${APP_RUNTIME:-DOTNET|8.0}"
+RUNTIME="${APP_RUNTIME:-DOTNETCORE|8.0}"
 
 log "Criando/atualizando recursos no Azure..."
 az group create --name "${RG_NAME}" --location "${LOCATION}" 1>/dev/null
