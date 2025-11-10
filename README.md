@@ -1,9 +1,9 @@
 # API MotoSync
 
 Integrantes:
-Vinicius Murtinho Vicente - Rm551151 
-Lucas Barreto Consentino - RM557107
-Gustavo Bispo Cordeiro - RM558515
+Vinicius Murtinho Vicente: Rm551151 
+Lucas Barreto Consentino: RM557107
+Gustavo Bispo Cordeiro: RM558515
 
 
 API .NET 8 minimalista para gestão de motos, usuários e filiais com integração ao Oracle Database, preparada para implantação via Azure DevOps (classic pipelines) conforme tutorial fornecido.
